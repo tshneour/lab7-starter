@@ -91,9 +91,9 @@ function initFormHandler() {
 		document.querySelector("main").appendChild(recipeCard);
 		// B9. TODO - Get the recipes array from localStorage, add this new recipe to it, and
 		//            then save the recipes array back to localStorage
-		const recipesArr = this.getRecipesFromStorage();
+		const recipesArr = getRecipesFromStorage();
 		recipesArr.push(recipeObject);
-		this.saveRecipesToStorage(recipesArr);
+		saveRecipesToStorage(recipesArr);
 	}
 	// B10. TODO - Get a reference to the "Clear Local Storage" button
 	const clearBtn = document.querySelector(".danger");
